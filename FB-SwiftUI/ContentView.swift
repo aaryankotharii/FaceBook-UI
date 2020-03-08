@@ -12,7 +12,29 @@ struct ContentView: View {
     
     let posts = ["1","2","3"]
     var body: some View {
-        Text(":")
+        NavigationView{
+             List{
+                ScrollView(Axis.Set.horizontal, showsIndicators: false) {
+                    VStack(alignment: .leading){
+                        Text("Trending")
+                         HStack{
+                             Text("Group1")
+                             Text("Group1")
+                             Text("Group1")
+                             Text("Group1")
+                             Text("Group1")
+                             Text("Group1")
+                             Text("Group1")
+                             Text("Group1")
+                         }
+                    }
+                }
+                 ForEach(posts, id:\.self){
+                     Text($0)
+                 }
+             }
+         .navigationBarTitle("Groups")
+         }
     }
 }
 
