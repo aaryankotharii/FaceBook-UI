@@ -29,8 +29,10 @@ struct ContentView: View {
                          }
                     }
                 }
-                 ForEach(posts, id:\.self){
-                     Text($0)
+                
+                 ForEach(posts, id:\.self){i in
+                    // Text($0)
+                    PostView()
                  }
              }
          .navigationBarTitle("Groups")

@@ -13,6 +13,7 @@
 		5B8E5A1F2414DE5A00066984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B8E5A1E2414DE5A00066984 /* Assets.xcassets */; };
 		5B8E5A222414DE5A00066984 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B8E5A212414DE5A00066984 /* Preview Assets.xcassets */; };
 		5B8E5A252414DE5A00066984 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B8E5A232414DE5A00066984 /* LaunchScreen.storyboard */; };
+		5B8E5A2D2414E17B00066984 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8E5A2C2414E17B00066984 /* PostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5B8E5A212414DE5A00066984 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5B8E5A242414DE5A00066984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B8E5A262414DE5A00066984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B8E5A2C2414E17B00066984 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				5B8E5A182414DE5300066984 /* AppDelegate.swift */,
 				5B8E5A1A2414DE5300066984 /* SceneDelegate.swift */,
 				5B8E5A1C2414DE5300066984 /* ContentView.swift */,
+				5B8E5A2C2414E17B00066984 /* PostView.swift */,
 				5B8E5A1E2414DE5A00066984 /* Assets.xcassets */,
 				5B8E5A232414DE5A00066984 /* LaunchScreen.storyboard */,
 				5B8E5A262414DE5A00066984 /* Info.plist */,
@@ -148,6 +151,7 @@
 			files = (
 				5B8E5A192414DE5300066984 /* AppDelegate.swift in Sources */,
 				5B8E5A1B2414DE5300066984 /* SceneDelegate.swift in Sources */,
+				5B8E5A2D2414E17B00066984 /* PostView.swift in Sources */,
 				5B8E5A1D2414DE5300066984 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
