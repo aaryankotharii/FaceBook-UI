@@ -9,22 +9,27 @@
 import SwiftUI
 
 struct PostView: View {
+    let post: Posts
     var body: some View {
-        VStack(alignment: .leading){
+        VStack(alignment: .leading, spacing:16 ){
             HStack {
-                Image("timCook")
+                Image(post.imageName)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .clipped()
                     .frame(width: 70, height: 70, alignment: .leading)
                     .clipShape(Circle())
-                VStack {
-                    Text("UserName")
+                VStack(alignment: .leading) {
+                    Text(post.username)
                         .font(.headline)
                     Text("8hours ago")
-                }
+                        .font(.subheadline)
+                }.padding(.leading, 8)
             }.padding([.top, .leading],16)
-        Text("Post body blahblahblahbalhablah")
+            Text(post.text)
+            .lineLimit(nil)
+            .padding(.leading, 16)
+            .padding(.trailing, 32)
         Image("iphones")
             .resizable()
             .aspectRatio(contentMode: .fit)
@@ -35,6 +40,6 @@ struct PostView: View {
 
 struct PostView_Previews: PreviewProvider {
     static var previews: some View {
-        PostView()
+        PostView(post: Posts(id: 2, username: "abcd", text: "hey yo", imageName: "timCook"))
     }
 }

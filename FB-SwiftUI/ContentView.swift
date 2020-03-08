@@ -10,29 +10,17 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let posts = ["1","2","3"]
+    let postArray : [Posts] = [Posts.init(id: 0, username: "TimCook", text: "hey yo yo", imageName: "timCook")]
     var body: some View {
         NavigationView{
              List{
                 ScrollView(Axis.Set.horizontal, showsIndicators: false) {
-                    VStack(alignment: .leading){
-                        Text("Trending")
-                         HStack{
-                             Text("Group1")
-                             Text("Group1")
-                             Text("Group1")
-                             Text("Group1")
-                             Text("Group1")
-                             Text("Group1")
-                             Text("Group1")
-                             Text("Group1")
-                         }
-                    }
+                        TrendingPost()
                 }
                 
-                 ForEach(posts, id:\.self){i in
+                ForEach(postArray, id:\.id){post in
                     // Text($0)
-                    PostView()
+                    PostView(post: post)
                  }
              }
          .navigationBarTitle("Groups")
