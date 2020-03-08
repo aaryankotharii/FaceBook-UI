@@ -9,8 +9,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let posts = ["1","2","3"]
     var body: some View {
-        Text("Hello, World!")
+        Text(":")
     }
 }
 
